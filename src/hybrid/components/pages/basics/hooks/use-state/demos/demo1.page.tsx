@@ -27,26 +27,6 @@ const Demo = () => {
     </Space>
 }
 const demoAsString = `
-const Demo = () => {
-    const [count1, setCount1] = useState(0)
-    const [count2, setCount2] = useState(0)
-
-    message.info('RENDERING', 0.4)
-
-    const bumpCount1 = () => setCount1(prev => prev + 1)
-    const bumpCount2 = () => setCount2(prev => prev + 1)
-
-    return <Space direction={'vertical'}>
-        <Space>
-            <Button onClick={bumpCount1}>Click me</Button>
-            <b>Count 1: {count1}</b>
-        </Space>
-        <Space>
-            <Button onClick={bumpCount2}>Click me</Button>
-            <b>Count 2: {count2}</b>
-        </Space>
-    </Space>
-}
         `
 const UseStateDemoPage = () => {
     return <AppShell>
