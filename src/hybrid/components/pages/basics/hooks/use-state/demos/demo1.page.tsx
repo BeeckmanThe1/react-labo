@@ -8,7 +8,7 @@ const Demo = () => {
     const [count1, setCount1] = useState(0)
     const [count2, setCount2] = useState(0)
 
-    // needed because SSR + hydration archetecture
+    // check is needed because of SSR + hydration architecture
     if (typeof window !== 'undefined') window.alert('RENDER')
 
     const bumpCount1 = () => setCount1(prev => prev + 1)
