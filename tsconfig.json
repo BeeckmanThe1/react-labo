@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false, // let eslint handle this -> with _unusedVar as ignore pattern
+    "module": "esnext",
+    "target": "es6",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "jsx": "react"
+  },
+  "files": ["src/server/index.ts"],
+  "include": ["src/custom.d.ts"]
+}

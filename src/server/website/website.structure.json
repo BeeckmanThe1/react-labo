@@ -1,0 +1,20 @@
+{
+  "title": "Website",
+  "metaDescription": "Meta",
+  "pages": [
+    {
+      "id": "1",
+      "name": "homepage",
+      "slug": "/home",
+      "sections": [
+        {
+          "id": "1",
+          "name": "hello-world",
+          "data": {
+            "value": "earth"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+.code-badge-pre {
+  position: relative;
+  overflow: hidden;
+
+  overflow-x: auto;
+  background: $black;
+  color: #eee;
+  line-height: 1.45;
+  margin: 10px 0 !important;
+  font-family: monospace;
+  font-size: 0.82em !important;
+  border-radius: 4px;
+
+  .code-badge {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    background: transparent;
+    background: $black;
+    opacity: 0.5;
+    border-radius: 0 0 0 7px;
+    padding: 5px 8px 5px 8px;
+    right: 0;
+    top: 0;
+
+    span {
+      cursor: pointer;
+      margin: $spacing-XXXS;
+    }
+  }
+  code {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #1E1E1E;
+  }
+}
+

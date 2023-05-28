@@ -1,0 +1,8 @@
+@mixin fade-in($seconds: $default-animation-duration) {
+  opacity: 0;
+  transition: opacity $seconds;
+
+  &.is-hydrated {
+    opacity: 1;
+  }
+}

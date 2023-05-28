@@ -1,0 +1,1 @@
+export { default as pageController } from './root/page.controller'
