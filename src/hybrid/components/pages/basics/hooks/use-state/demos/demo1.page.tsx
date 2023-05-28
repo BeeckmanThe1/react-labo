@@ -1,15 +1,16 @@
 import React, {useState} from 'react'
 import {meta} from './demo1.page.meta';
-import {Button, Row, Space} from 'antd';
+import {Button, Space, message} from 'antd';
 import AppShell from '../../../../../app-shell/app.shell';
 import CodeSnippet, {CODE_LANGUAGES} from '../../../../../partials/code-snippet/CodeSnippet';
 
+const isRenderingInBrowser = typeof window !== 'undefined'
 const Demo = () => {
     const [count1, setCount1] = useState(0)
     const [count2, setCount2] = useState(0)
 
     // check is needed because of SSR + hydration architecture
-    if (typeof window !== 'undefined') window.alert('RENDER')
+    if (isRenderingInBrowser) message.info('RENDERING', 0.4)
 
     const bumpCount1 = () => setCount1(prev => prev + 1)
     const bumpCount2 = () => setCount2(prev => prev + 1)
@@ -25,9 +26,7 @@ const Demo = () => {
         </Space>
     </Space>
 }
-
-const UseStateDemoPage = () => {
-    const children = `
+const demoAsString = `
     const Demo = () => {
         const [count1, setCount1] = useState(0)
         const [count2, setCount2] = useState(0)
@@ -50,12 +49,13 @@ const UseStateDemoPage = () => {
         </Space>
     }
         `
+const UseStateDemoPage = () => {
     return <AppShell>
         <h1>{UseStateDemoPage.meta.title}</h1>
         <Demo/>
 
         <CodeSnippet language={CODE_LANGUAGES.JS}>
-            {children}
+            {demoAsString}
         </CodeSnippet>
     </AppShell>
 }
