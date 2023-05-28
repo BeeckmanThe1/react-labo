@@ -2,12 +2,12 @@
 
 <div align="center">
   <h3>
-    <a href="https://dev-challenge-uploader.herokuapp.com/">
-      Demo **
+    <a href="https://react-labo.herokuapp.com/home">
+      Demo
     </a>
     <span> | </span>
     <a href="https://github.com/BeeckmanThe1/react-labo">
-      Solution **
+      Solution
     </a>
   </h3>
 </div>
