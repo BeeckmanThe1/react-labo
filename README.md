@@ -6,7 +6,7 @@
       Demo **
     </a>
     <span> | </span>
-    <a href="https://github.com/BeeckmanThe1/uploader">
+    <a href="https://github.com/BeeckmanThe1/react-labo">
       Solution **
     </a>
   </h3>
