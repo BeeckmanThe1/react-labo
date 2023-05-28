@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false, // let eslint handle this -> with _unusedVar as ignore pattern
