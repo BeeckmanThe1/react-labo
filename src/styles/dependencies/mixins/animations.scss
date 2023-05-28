@@ -1,4 +1,4 @@
-@mixin fade-in($seconds: $default-animation-duration) {
+@mixin fade-in($seconds: $long-animation-duration) {
   opacity: 0;
   transition: opacity $seconds;
 
