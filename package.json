@@ -13,7 +13,7 @@
     "build:watch": "webpack --mode=development --watch",
     "run:watch": "nodemon --inspect dist/main.js",
     "typecheck": "tsc --noEmit",
-    "heroku:log": "heroku logs --tail -a dev-challenge-uploader",
+    "heroku:log": "heroku logs --tail -a react-labo",
     "heroku:run": "heroku local web",
     "eslint": "eslint src/**/*.{t,j}s{,x} --quiet",
     "stylelint": "stylelint --config stylelint.config.js **/*.scss",

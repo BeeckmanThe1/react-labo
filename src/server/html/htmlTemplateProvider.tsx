@@ -24,7 +24,7 @@ export const getBasicSkeleton = ({ url }: { url: string }) => {
     const queryClient = new QueryClient()
     const Page = pages.find(p => p.default.meta.url === url).default
     const pageMeta: PageMeta = Page.meta;
-    const origin = process.env.ORIGIN || window?.location?.origin
+    const origin = process.env.ORIGIN
 
     const html = ReactDOMServer.renderToString(<HtmlTag Tag={HtmlTags.html} lang="en">
             <HtmlTag Tag={HtmlTags.head}>
