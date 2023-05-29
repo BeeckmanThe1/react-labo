@@ -1,7 +1,6 @@
 import React from 'react';
 import { meta } from './use-context.page.meta'
 import { PageMeta } from '../../../page.model';
-import Demo1 from './demos/demo1.page';
 import AppShell from '../../../../app-shell/app.shell';
 import { List } from 'antd';
 import demos from './demos/index'

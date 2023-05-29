@@ -24,6 +24,7 @@ module.exports = {
         }
     },
     'rules': {
+        'array-bracket-spacing': ['error', 'never'],
         'comma-dangle': ['error', {
             'arrays': 'never',
             'objects': 'never',
@@ -31,16 +32,16 @@ module.exports = {
             'exports': 'never',
             'functions': 'never'
         }],
-        'quotes': [2, 'single', { 'avoidEscape': true }],
         'no-multi-spaces': ['error'],
-        'object-curly-spacing': ['error', 'always'],
-        'array-bracket-spacing': ['error', 'never'],
         'no-unused-vars': ['error', {
             'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': false,
             'argsIgnorePattern': '^_',
             'varsIgnorePattern': '^_',
             'caughtErrorsIgnorePattern': '^_'
         }],
+        'object-curly-spacing': ['error', 'always'],
+        'quotes': [2, 'single', { 'avoidEscape': true }],
+        'react/prop-types': ['off'],
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-var-requires': 0
     }

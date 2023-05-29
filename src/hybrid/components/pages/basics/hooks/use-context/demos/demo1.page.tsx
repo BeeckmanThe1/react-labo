@@ -1,9 +1,9 @@
-import React, {useContext, useEffect} from 'react'
-import {meta} from './demo1.page.meta';
-import {Typography, Collapse, Space} from 'antd';
-import AppShell from "../../../../../app-shell/app.shell";
-import CodeSnippet, {CODE_LANGUAGES} from "../../../../../partials/code-snippet/CodeSnippet";
-import {SharedContext} from "./demo.context";
+import React, { useContext } from 'react'
+import { meta } from './demo1.page.meta';
+import { Typography, Collapse, Space } from 'antd';
+import AppShell from '../../../../../app-shell/app.shell';
+import CodeSnippet, { CODE_LANGUAGES } from '../../../../../partials/code-snippet/CodeSnippet';
+import { SharedContext } from './demo.context';
 
 const GrandChild1 = () => {
     const sharedContext = useContext(SharedContext)
@@ -13,7 +13,7 @@ const GrandChild1 = () => {
         </Collapse.Panel>
     </Collapse>
 }
-const Child1 = ({children}) => {
+const Child1 = ({ children }) => {
     const sharedContext = useContext(SharedContext)
 
     return <Collapse defaultActiveKey={'child-1'}>
@@ -67,7 +67,7 @@ Child1.children = {
 Demo.children = {
     Child1,
     Child2,
-    Child3,
+    Child3
 }
 
 
@@ -78,6 +78,8 @@ export const SharedContext = createContext<{message: string}>(null)
 
         `
 const contextProviderString = `
+import {SharedContext} from "./demo.context";
+
 <SharedContext.Provider value={sharedState}>
         <Collapse defaultActiveKey={'demo'}>
             <Collapse.Panel key={'demo'} header={'Demo'}>
@@ -94,6 +96,8 @@ const contextProviderString = `
 
         `
 const contextUsageString = `
+import {SharedContext} from "./demo.context";
+
 const Child3 = () => {
     const sharedContext = useContext(SharedContext)
 

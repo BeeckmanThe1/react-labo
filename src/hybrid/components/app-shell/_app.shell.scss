@@ -1,11 +1,12 @@
 .app-shell {
-
   @include fade-in;
 
   .breadcrumb-and-content-wrapper {
     padding: 0 $spacing-L;
+
     .breadcrumb-wrapper {
       margin: $spacing-SM 0;
+
       .ant-breadcrumb-link {
         cursor: pointer;
       }
@@ -20,9 +21,11 @@
       @include for-phone-up {
         padding: $spacing-XS;
       }
+
       @include for-tablets-up {
         padding: $spacing-MD;
       }
+
       @include for-small-screens-up {
         padding: $spacing-L;
       }
