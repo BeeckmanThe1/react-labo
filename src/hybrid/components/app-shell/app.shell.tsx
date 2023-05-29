@@ -1,6 +1,6 @@
 import React from 'react'
 import { Breadcrumb, Layout, Menu } from 'antd';
-import {useDynamicClasses, useWebsiteNavigation} from './app-shell.hooks';
+import { useDynamicClasses, useWebsiteNavigation } from './app-shell.hooks';
 
 const { Header, Content, Footer } = Layout;
 const AppShell = ({ children }: React.PropsWithChildren) => {
