@@ -1,0 +1,19 @@
+.slider-container{
+  height: 20px;
+  background: yellow;
+  border: solid 2px black;
+  border-radius: 4px;
+  position: relative;
+
+  width: 500px;
+
+
+  .slider {
+    outline: solid black 2px;
+    border-radius: 4px;
+    position: absolute;
+    height: 100%;
+    background: lightgreen;
+
+  }
+}
