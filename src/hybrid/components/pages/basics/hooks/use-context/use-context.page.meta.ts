@@ -5,5 +5,5 @@ export const meta: PageMeta = {
     metaDescription: 'Info about useContext',
     slug: 'use-context',
     url: '/basics/hooks/use-context',
-    order: 2
+    order: 3
 }
