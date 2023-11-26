@@ -5,7 +5,6 @@ import AppShell from '../../../../../app-shell/app.shell';
 import { Slider } from './after-refactor/Slider';
 
 const UseReducerDemoPage = () => {
-
     const tabItems = [
         {
             key: '1',
@@ -32,6 +31,7 @@ const UseReducerDemoPage = () => {
             </Collapse>
         }
     ];
+
     return <AppShell>
         <h1>{UseReducerDemoPage.meta.title}</h1>
         <Card>
