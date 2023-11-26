@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { meta } from './demo1.page.meta';
 import { Button, Space, message } from 'antd';
-import AppShell from '../../../../../app-shell/app.shell';
-import CodeSnippet, { CODE_LANGUAGES } from '../../../../../partials/code-snippet/CodeSnippet';
+import AppShell from '../../../../../../app-shell/app.shell';
+import CodeSnippet, { CODE_LANGUAGES } from '../../../../../../partials/code-snippet/CodeSnippet';
 
 const isRenderingInBrowser = typeof window !== 'undefined'
 const Demo = () => {
