@@ -1,4 +1,4 @@
-import { PageMeta } from '../../page.model';
+import {PageMeta} from '../../page.model';
 
 export const meta: PageMeta = {
     title: 'Hooks',
