@@ -4,5 +4,5 @@ function importAll(r) {
 }
 
 
-const demos = importAll(require.context('./', false, /\.page\.tsx$/));
+const demos = importAll(require.context('./', true, /\.page\.tsx$/));
 export default demos
